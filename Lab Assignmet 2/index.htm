@@ -5,90 +5,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Hub</title>
     <link rel="stylesheet" href="styles.css">
-
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
-        }
-        p {
-            line-height: 1.6;
-        }
         iframe {
             width: 100%;
             height: 500px;
             border-radius: 25px;
-            box-shadow: black;
-            border:3px solid red;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border: 3px solid #e74c3c;
         }
-
     </style>
-
 </head>
 <body>
     <div class="wrapper">
-        <h1>Games hub</h1>
-        <p>Your one-stop destination for gaming excitement!</p>
-        <div class="container">
-            <h2 id="colors">Top Games</h2>
-        
+        <header>
+            <h1>Games Hub</h1>
+            <p>Your one-stop destination for gaming excitement!</p>
+        </header>
+
+        <section id="top-games">
+            <hr>
+            <h2>Top Games</h2>
+            
             <div class="poster-container">
                 <figure class="card">
-                    <img src="images/warzone.png" />
+                    <img src="images/warzone.png" alt="Call of Duty: Warzone" />
                     <figcaption>Call of Duty: Warzone</figcaption>
                 </figure>
                 <figure class="card">
-                    <img src="images/gta.jpg" />
+                    <img src="images/gta.jpg" alt="Grand Theft Auto V" />
                     <figcaption>Grand Theft Auto V</figcaption>
                 </figure>
                 <figure class="card">
-                    <img src="images/cyberpunk-2077.jpg" />
+                    <img src="images/cyberpunk-2077.jpg" alt="Cyberpunk 2077" />
                     <figcaption>Cyberpunk 2077</figcaption>
                 </figure>
+                <figure class="card">
+                    <img src="images/farcry6.webp" alt="Far Cry 6" />
+                    <figcaption>Far Cry 6</figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="images/apex.jpg" alt="Apex Legends" />
+                    <figcaption>Apex legends</figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="images/witcher3.webp" alt="The Witcher 3" />
+                    <figcaption>The Witcher 3</figcaption>
+                </figure>
             </div>
-            <h2 id="colors">Games List</h2>
+        </section>
+
+        <section id="games-list">
+            <hr>
+            <h2>Games List</h2>
+            
             <div class="table-container">
-                <table border="1" cellpadding="10">
-                    <tr>
-                        <th>Game Title</th>
-                        <th>Genre</th>
-                        <th>Release Date</th>
-                    </tr>
-                    <tr>
-                        <td>CS2</td>
-                        <td>FPS</td>
-                        <td>12-9-2023</td>
-                    </tr>
-                    <tr>
-                        <td>PUBG</td>
-                        <td>Battle Royale</td>
-                        <td>23-03-2017</td>
-                    </tr>
-                    <tr>
-                        <td>Valorant</td>
-                        <td>FPS</td>
-                        <td>23-03-2021</td>
-                    </tr>
-                    <tr>
-                        <td>The Finals</td>
-                        <td>Battle Royale</td>
-                        <td>23-12-2023</td>
-                    </tr>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Game Title</th>
+                            <th>Genre</th>
+                            <th>Release Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>CS2</td>
+                            <td>FPS</td>
+                            <td>12-9-2023</td>
+                        </tr>
+                        <tr>
+                            <td>PUBG</td>
+                            <td>Battle Royale</td>
+                            <td>23-03-2017</td>
+                        </tr>
+                        <tr>
+                            <td>Valorant</td>
+                            <td>FPS</td>
+                            <td>23-03-2021</td>
+                        </tr>
+                        <tr>
+                            <td>The Finals</td>
+                            <td>Battle Royale</td>
+                            <td>23-12-2023</td>
+                        </tr>
+                        <tr>
+                            <td>Red Dead Redemption 2</td>
+                            <td>Action-Adventure</td>
+                            <td>26-10-2018</td>
+                        </tr>
+                        <tr>
+                            <td>Assassin's Creed Valhalla</td>
+                            <td>Action RPG</td>
+                            <td>10-11-2020</td>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
-            <div class="gta">
-            <h2 class="game">Gameplay Video</h2>
-            <iframe src="https://www.youtube.com/embed/0E44DClsX5Q" frameborder="20" allowfullscreen></iframe>
-            </div>
+        </section>
+
+        <section id="gameplay-video">
+            <hr>
+            <h2>Gameplay Video</h2>
+            
+            <iframe src="https://www.youtube.com/embed/0E44DClsX5Q" frameborder="0" allowfullscreen></iframe>
+        </section>
+
+        <section id="featured-games">
+            <hr>
             <h2>Featured Games</h2>
+            
             <ul class="game-list">
                 <li class="game-list-item">Call of Duty: Warzone</li>
                 <li class="game-list-item">Grand Theft Auto 5</li>
                 <li class="game-list-item">Cyberpunk 2077</li>
             </ul>
-            <h2 id="contact">Contact Us</h2>
+        </section>
+
+        <section id="contact">
+            <hr>
+            <h2>Contact Us</h2>
+            
             <form action="/submit_form" method="post">
                 <label for="name">Your Name:</label>
                 <input type="text" id="name" name="name" required><br>
@@ -98,9 +134,9 @@
 
                 <label for="message">Your Message:</label><br>
                 <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
-                <input type="submit" value="Submit"id="sub">
+                <input type="submit" value="Submit" class="submit-btn">
             </form>
-        </div>
+        </section>
     </div>
 </body>
 </html>
