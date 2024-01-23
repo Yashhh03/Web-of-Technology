@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Hub</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        p {
+            line-height: 1.6;
+        }
+        iframe {
+            width: 100%;
+            height: 500px;
+            border-radius: 25px;
+            box-shadow: black;
+            border:3px solid red;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Games hub</h1>
+        <p>Your one-stop destination for gaming excitement!</p>
+        <div class="container">
+            <h2 id="colors">Top Games</h2>
+        
+            <div class="poster-container">
+                <figure class="card">
+                    <img src="images/warzone.png" />
+                    <figcaption>Call of Duty: Warzone</figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="images/gta.jpg" />
+                    <figcaption>Grand Theft Auto V</figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="images/cyberpunk-2077.jpg" />
+                    <figcaption>Cyberpunk 2077</figcaption>
+                </figure>
+            </div>
+            <h2 id="colors">Games List</h2>
+            <div class="table-container">
+                <table border="1" cellpadding="10">
+                    <tr>
+                        <th>Game Title</th>
+                        <th>Genre</th>
+                        <th>Release Date</th>
+                    </tr>
+                    <tr>
+                        <td>CS2</td>
+                        <td>FPS</td>
+                        <td>12-9-2023</td>
+                    </tr>
+                    <tr>
+                        <td>PUBG</td>
+                        <td>Battle Royale</td>
+                        <td>23-03-2017</td>
+                    </tr>
+                    <tr>
+                        <td>Valorant</td>
+                        <td>FPS</td>
+                        <td>23-03-2021</td>
+                    </tr>
+                    <tr>
+                        <td>The Finals</td>
+                        <td>Battle Royale</td>
+                        <td>23-12-2023</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="gta">
+            <h2 class="game">Gameplay Video</h2>
+            <iframe src="https://www.youtube.com/embed/0E44DClsX5Q" frameborder="20" allowfullscreen></iframe>
+            </div>
+            <h2>Featured Games</h2>
+            <ul class="game-list">
+                <li class="game-list-item">Call of Duty: Warzone</li>
+                <li class="game-list-item">Grand Theft Auto 5</li>
+                <li class="game-list-item">Cyberpunk 2077</li>
+            </ul>
+            <h2 id="contact">Contact Us</h2>
+            <form action="/submit_form" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="message">Your Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+                <input type="submit" value="Submit"id="sub">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
