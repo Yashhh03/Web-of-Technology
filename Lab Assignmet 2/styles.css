@@ -1,22 +1,14 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #f78ca0, #fe9f75);
+    font-family: 'Roboto', sans-serif;
     margin: 0;
-    padding: 0;
-}
-
-.wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 15px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: rgb(250, 237, 208);
+    font-size: 1.5rem;
 }
 
 header {
     text-align: center;
-    margin-bottom: 20px;
+    max-width: 100%;
+    padding: 20px;
 }
 
 h1 {
@@ -42,16 +34,20 @@ hr {
 }
 
 h2 {
-    margin: 20px 0;
-    font-size: 2rem;
+    margin: 20px 140px;
+    margin-top: 50px;
+    font-size: 2.2rem;
     font-weight: 500;
     color: #e74c3c;
 }
 
 .poster-container {
+    max-width: 1300px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    padding-left: 120px;
+    justify-content: space-around center;
+
 }
 
 .card {
@@ -102,6 +98,7 @@ h2 {
 
 .table-container {
     margin-top: 20px;
+    margin: 0 130px;
 }
 
 table {
@@ -130,7 +127,7 @@ tbody tr:nth-child(odd) {
 
 .game-list {
     list-style-type: none;
-    padding: 0;
+    padding: 0 140px;
 }
 
 .game-list-item {
@@ -142,7 +139,7 @@ tbody tr:nth-child(odd) {
 }
 
 form {
-    margin: 20px 0;
+    margin: 20px 130px;
     background: linear-gradient(135deg, #2ecc71, #3498db);
     padding: 20px;
     border-radius: 10px;
@@ -158,7 +155,7 @@ label {
 
 input,
 textarea {
-    width: 100%;
+    width: 97%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #fff;
