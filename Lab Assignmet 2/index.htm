@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Hub</title>
+    <link rel="stylesheet" href="shared.css">
     <link rel="stylesheet" href="styles.css">
     <style>
         iframe {
@@ -27,27 +28,33 @@
             
         <div class="poster-container">
             <figure class="card">
-                <img src="images/warzone2.jpg" alt="Call of Duty: Warzone" />
+                <a href="https://www.callofduty.com/warzone">
+                    <img src="images/warzone2.jpg" alt="Call of Duty: Warzone" /></a>
                 <figcaption>Call of Duty: Warzone</figcaption>
             </figure>
             <figure class="card">
-                <img src="images/gta2.webp" alt="Grand Theft Auto V" />
+                <a href="https://www.rockstargames.com/gta-v">
+                    <img src="images/gta2.webp" alt="Grand Theft Auto V" /></a>
                 <figcaption>Grand Theft Auto V</figcaption>
             </figure>
             <figure class="card">
-                <img src="images/cyberpunk2.jpg" alt="Cyberpunk 2077" />
+                <a href="https://www.cyberpunk.net/in/en/">
+                    <img src="images/cyberpunk2.jpg" alt="Cyberpunk 2077" /></a>
                 <figcaption>Cyberpunk 2077</figcaption>
             </figure>
             <figure class="card">
-                <img src="images/farcry2.webp" alt="Far Cry 6" />
+                <a href="https://www.ubisoft.com/en-gb/game/far-cry/far-cry-6">
+                    <img src="images/farcry2.webp" alt="Far Cry 6" /></a>
                 <figcaption>Far Cry 6</figcaption>
             </figure>
             <figure class="card">
-                <img src="images/apexleg2.jpg" alt="Apex Legends" />
+                <a href="https://www.ea.com/games/apex-legends">
+                    <img src="images/apexleg2.jpg" alt="Apex Legends" /></a>
                 <figcaption>Apex legends</figcaption>
             </figure>
             <figure class="card">
-                <img src="images/witcher2.jpeg" alt="The Witcher 3" />
+                <a href="https://www.thewitcher.com/us/en/witcher3">
+                    <img src="images/witcher2.jpeg" alt="The Witcher 3" /></a>
                 <figcaption>The Witcher 3</figcaption>
             </figure>
         </div>
@@ -123,21 +130,14 @@
             </ul>
         </section>
 
-        <section id="contact">
+        <footer>
             <hr>
-            <h2>Contact Us</h2>
-            
-            <form action="/submit_form" method="post">
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" required><br>
-
-                <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" required><br>
-
-                <label for="message">Your Message:</label><br>
-                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
-                <input type="submit" value="Submit" class="submit-btn">
-            </form>
-        </section>
+            <nav>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </footer>
 </body>
 </html>
