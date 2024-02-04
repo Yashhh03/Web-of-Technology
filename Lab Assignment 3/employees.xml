@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="employees.xsl"?>
+
+<!DOCTYPE employees SYSTEM "employees.dtd">
+<employees>
+    <employee>
+        <id>1</id>
+        <name>Swapnil Shinde</name>
+        <position>Software Engineer</position>
+        <department>IT</department>
+        <salary>75000</salary>
+    </employee>
+    <employee>
+        <id>2</id>
+        <name>Harsh Repal</name>
+        <position>Product Manager</position>
+        <department>Product Manager</department>
+        <salary>60000</salary>
+    </employee>
+    <employee>
+        <id>3</id>
+        <name>Michelle Vas</name>
+        <position>Marketing Specialist</position>
+        <department>Marketing</department>
+        <salary>60000</salary>
+    </employee>
+    <employee>
+        <id>4</id>
+        <name>Shantanu Pawar</name>
+        <position>Data Scientist</position>
+        <department>Analytics</department>
+        <salary>80000</salary>
+    </employee>
+</employees>
+
