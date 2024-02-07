@@ -5,6 +5,9 @@
     <html>
       <head>
         <style>
+          body {
+            background-color: rgb(250, 237, 208);
+          }
           table {
             border-collapse: collapse;
             width: 100%;
@@ -15,7 +18,14 @@
             padding: 16px;
           }
           th {
-            background-color: #f2f2f2;
+            background: linear-gradient(135deg, #f39c12, #e74c3c);
+            color: #fff;
+          }
+          tbody tr:nth-child(even) {
+            background-color: #eee;
+          }
+          tbody tr:nth-child(odd) {
+            background-color: #fff;
           }
         </style>
         <link rel="stylesheet" type="text/css" href="employees.css"/>
